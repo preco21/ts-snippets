@@ -9,13 +9,12 @@ export function shallowEqual(a: unknown, b: unknown): boolean {
     return a.every((e, i) => e === b[i]);
   }
   if (typeof a === 'object' && typeof b === 'object') {
-    const aKeys = Object.keys(a!);
-    const bKeys = Object.keys(b!);
-    if (aKeys.length !== bKeys.length) {
+    const keysA = Object.keys(a!);
+    const keysB = Object.keys(b!);
+    if (keysA.length !== keysB.length) {
       return false;
     }
-    // @ts-ignore
-    return aKeys.every((key, i) => key === bKeys[i] && a[key] === b[key]);
+    return keysA.every((key, i) => key === keysB[i] && a[key] === b[key]);
   }
   return a === b;
 }

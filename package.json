@@ -29,6 +29,9 @@
   },
   "eslintConfig": {
     "root": true,
-    "extends": "@preco21/eslint-config/typescript"
+    "extends": "@preco21/eslint-config/typescript",
+    "rules": {
+      "no-self-compare": "off"
+    }
   }
 }
