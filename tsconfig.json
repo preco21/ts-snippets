@@ -1,9 +1,5 @@
 {
   "extends": "@preco21/tsconfig",
-  "compilerOptions": {
-    "outDir": "dist",
-    "declaration": true,
-    "incremental": true
-  },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
