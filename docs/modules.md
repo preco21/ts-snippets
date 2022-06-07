@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[array-chunk.ts:1](https://github.com/preco21/ts-snippets/blob/a9652d2/src/array-chunk.ts#L1)
+[array-chunk.ts:1](https://github.com/preco21/ts-snippets/blob/0c0e4d3/src/array-chunk.ts#L1)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[array-move.ts:1](https://github.com/preco21/ts-snippets/blob/a9652d2/src/array-move.ts#L1)
+[array-move.ts:1](https://github.com/preco21/ts-snippets/blob/0c0e4d3/src/array-move.ts#L1)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[deep-equal.ts:1](https://github.com/preco21/ts-snippets/blob/a9652d2/src/deep-equal.ts#L1)
+[deep-equal.ts:1](https://github.com/preco21/ts-snippets/blob/0c0e4d3/src/deep-equal.ts#L1)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[generate-id.ts:1](https://github.com/preco21/ts-snippets/blob/a9652d2/src/generate-id.ts#L1)
+[generate-id.ts:1](https://github.com/preco21/ts-snippets/blob/0c0e4d3/src/generate-id.ts#L1)
 
 ___
 
@@ -119,4 +119,4 @@ ___
 
 #### Defined in
 
-[shallow-equal.ts:1](https://github.com/preco21/ts-snippets/blob/a9652d2/src/shallow-equal.ts#L1)
+[shallow-equal.ts:1](https://github.com/preco21/ts-snippets/blob/0c0e4d3/src/shallow-equal.ts#L1)
