@@ -15,7 +15,7 @@ export function deepEqual(a: unknown, b: unknown): boolean {
       return false;
     }
     return keysA.every((keyA, i) => {
-      return keysB[i] === keyA && deepEqual(a[keyA], b[keyA]);
+      return keysB[i] === keyA && deepEqual((a as any)[keyA], (b as any)[keyA]);
     });
   }
   return a !== a && b !== b;
