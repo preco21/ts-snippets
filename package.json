@@ -20,6 +20,7 @@
   "devDependencies": {
     "@preco21/eslint-config": "^2.2.2",
     "@preco21/tsconfig": "^5.2.1",
+    "@types/node": "^17.0.41",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
     "eslint": "^8.17.0",
@@ -30,6 +31,10 @@
   "eslintConfig": {
     "root": true,
     "extends": "@preco21/eslint-config/typescript",
+    "env": {
+      "browser": true,
+      "node": true
+    },
     "rules": {
       "no-self-compare": "off",
       "@typescript-eslint/no-explicit-any": "off"
