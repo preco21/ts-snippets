@@ -1,4 +1,5 @@
 export * from './array-chunk';
+export * from './array-intersection';
 export * from './array-move';
 export * from './array-nearest-offset';
 export * from './array-shuffle';
@@ -9,4 +10,5 @@ export * from './clear-module-cache';
 export * from './deep-equal';
 export * from './generate-id';
 export * from './group-by';
+export * from './pipe';
 export * from './shallow-equal';
