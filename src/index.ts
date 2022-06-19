@@ -8,4 +8,5 @@ export * from './chunk-string-natural';
 export * from './clear-module-cache';
 export * from './deep-equal';
 export * from './generate-id';
+export * from './group-by';
 export * from './shallow-equal';
