@@ -39,17 +39,21 @@ export function getNumberPlaceBetween(
   i: number,
   step: number,
 ): number {
-  return Math.floor(input / (step ** i) % step);
+  return Math.floor(input / Math.pow(step, i) % step);
 }
 
 export function formatNumberHumanFriendlyKorean(input: number): string {
-  const totalSteps = Math.ceil(Math.log(input) / Math.log(10000));
+  const totalSteps = Math.floor(Math.log(input) / Math.log(10000)) + 1;
   const str = [];
   for (let i = 0; i < totalSteps; i++) {
-    str.unshift(KOREAN_NUMBER_THOUSANDS_PLACE[i]);
     // Pluck sub-unit places with upper/lower bounds stripped.
     // e.g. 12,'345',000 -> 345 (1)
     const subThousandsPlace = getNumberPlaceBetween(input, i, 10000);
+    // Ignore the full round if it results in zero.
+    if (subThousandsPlace < 1) {
+      continue;
+    }
+    str.unshift(KOREAN_NUMBER_THOUSANDS_PLACE[i]);
     // Calculate the total number of iterations that should be by taking
     // log10(x), lower bound capped at 1.
     const totalSubThousandsPlaces = Math.max(Math.ceil(Math.log10(subThousandsPlace)), 1);
