@@ -12,3 +12,5 @@ export * from './generate-id';
 export * from './group-by';
 export * from './pipe';
 export * from './shallow-equal';
+export * from './human-friendly-number-korean';
+export * from './get-step';

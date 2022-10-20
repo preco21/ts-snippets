@@ -15,7 +15,10 @@
 - [chunkStringNatural](modules.md#chunkstringnatural)
 - [clearModuleCache](modules.md#clearmodulecache)
 - [deepEqual](modules.md#deepequal)
+- [formatNumberHumanFriendlyKorean](modules.md#formatnumberhumanfriendlykorean)
 - [generateId](modules.md#generateid)
+- [getNumberPlaceBetween](modules.md#getnumberplacebetween)
+- [getStep](modules.md#getstep)
 - [groupBy](modules.md#groupby)
 - [pipe](modules.md#pipe)
 - [shallowEqual](modules.md#shallowequal)
@@ -45,7 +48,7 @@
 
 #### Defined in
 
-[array-chunk.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/array-chunk.ts#L1)
+[array-chunk.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/array-chunk.ts#L1)
 
 ___
 
@@ -74,7 +77,7 @@ ___
 
 #### Defined in
 
-[array-intersection.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/array-intersection.ts#L1)
+[array-intersection.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/array-intersection.ts#L1)
 
 ___
 
@@ -102,7 +105,7 @@ ___
 
 #### Defined in
 
-[array-move.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/array-move.ts#L1)
+[array-move.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/array-move.ts#L1)
 
 ___
 
@@ -131,7 +134,7 @@ ___
 
 #### Defined in
 
-[array-nearest-offset.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/array-nearest-offset.ts#L1)
+[array-nearest-offset.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/array-nearest-offset.ts#L1)
 
 ___
 
@@ -157,7 +160,7 @@ ___
 
 #### Defined in
 
-[array-shuffle.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/array-shuffle.ts#L1)
+[array-shuffle.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/array-shuffle.ts#L1)
 
 ___
 
@@ -183,7 +186,7 @@ ___
 
 #### Defined in
 
-[array-shuffle.ts:9](https://github.com/preco21/ts-snippets/blob/588ef9b/src/array-shuffle.ts#L9)
+[array-shuffle.ts:9](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/array-shuffle.ts#L9)
 
 ___
 
@@ -209,7 +212,7 @@ ___
 
 #### Defined in
 
-[array-traverse-diagonal.ts:10](https://github.com/preco21/ts-snippets/blob/588ef9b/src/array-traverse-diagonal.ts#L10)
+[array-traverse-diagonal.ts:10](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/array-traverse-diagonal.ts#L10)
 
 ___
 
@@ -230,7 +233,7 @@ ___
 
 #### Defined in
 
-[binary-search.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/binary-search.ts#L1)
+[binary-search.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/binary-search.ts#L1)
 
 ___
 
@@ -251,7 +254,7 @@ ___
 
 #### Defined in
 
-[chunk-string-natural.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/chunk-string-natural.ts#L1)
+[chunk-string-natural.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/chunk-string-natural.ts#L1)
 
 ___
 
@@ -271,7 +274,7 @@ ___
 
 #### Defined in
 
-[clear-module-cache.ts:2](https://github.com/preco21/ts-snippets/blob/588ef9b/src/clear-module-cache.ts#L2)
+[clear-module-cache.ts:2](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/clear-module-cache.ts#L2)
 
 ___
 
@@ -292,7 +295,27 @@ ___
 
 #### Defined in
 
-[deep-equal.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/deep-equal.ts#L1)
+[deep-equal.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/deep-equal.ts#L1)
+
+___
+
+### formatNumberHumanFriendlyKorean
+
+▸ **formatNumberHumanFriendlyKorean**(`input`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `input` | `number` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[human-friendly-number-korean.ts:45](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/human-friendly-number-korean.ts#L45)
 
 ___
 
@@ -306,7 +329,50 @@ ___
 
 #### Defined in
 
-[generate-id.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/generate-id.ts#L1)
+[generate-id.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/generate-id.ts#L1)
+
+___
+
+### getNumberPlaceBetween
+
+▸ **getNumberPlaceBetween**(`input`, `i`, `step`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `input` | `number` |
+| `i` | `number` |
+| `step` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+[human-friendly-number-korean.ts:37](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/human-friendly-number-korean.ts#L37)
+
+___
+
+### getStep
+
+▸ **getStep**(`number`, `base?`): [`number`, `number`]
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `number` | `number` | `undefined` |
+| `base` | `number` | `10000` |
+
+#### Returns
+
+[`number`, `number`]
+
+#### Defined in
+
+[get-step.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/get-step.ts#L1)
 
 ___
 
@@ -334,7 +400,7 @@ ___
 
 #### Defined in
 
-[group-by.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/group-by.ts#L1)
+[group-by.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/group-by.ts#L1)
 
 ___
 
@@ -373,7 +439,7 @@ ___
 
 #### Defined in
 
-[pipe.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/pipe.ts#L1)
+[pipe.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/pipe.ts#L1)
 
 ___
 
@@ -394,4 +460,4 @@ ___
 
 #### Defined in
 
-[shallow-equal.ts:1](https://github.com/preco21/ts-snippets/blob/588ef9b/src/shallow-equal.ts#L1)
+[shallow-equal.ts:1](https://github.com/preco21/ts-snippets/blob/5b8f72b/src/shallow-equal.ts#L1)
