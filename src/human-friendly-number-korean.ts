@@ -43,24 +43,30 @@ export function getNumberPlaceBetween(
 }
 
 export function formatNumberHumanFriendlyKorean(input: number): string {
+  if (input < 1) {
+    return '';
+  }
   const totalSteps = Math.floor(Math.log(input) / Math.log(10000)) + 1;
-  const str = [];
+  const result = [];
   for (let i = 0; i < totalSteps; i++) {
     // Pluck sub-unit places with upper/lower bounds stripped.
     // e.g. 12,'345',000 -> 345 (1)
     const subThousandsPlace = getNumberPlaceBetween(input, i, 10000);
-    // Ignore the full round if it results in zero.
+    // Ignore the whole round if it results in zero.
     if (subThousandsPlace < 1) {
       continue;
     }
-    str.unshift(KOREAN_NUMBER_THOUSANDS_PLACE[i]);
+    result.unshift(KOREAN_NUMBER_THOUSANDS_PLACE[i]);
     // Calculate the total number of iterations that should be by taking
     // log10(x), lower bound capped at 1.
-    const totalSubThousandsPlaces = Math.max(Math.ceil(Math.log10(subThousandsPlace)), 1);
+    const totalSubThousandsPlaces = Math.floor(Math.log10(subThousandsPlace)) + 1;
     for (let j = 0; j < totalSubThousandsPlaces; j++) {
       const num = getNumberPlaceBetween(subThousandsPlace, j, 10);
-      str.unshift(`${KOREAN_NUMBER_COUNTING_PLACE[num]}${KOREAN_NUMBER_SUB_THOUSANDS_PLACE[j]}`);
+      if (num < 1) {
+        continue;
+      }
+      result.unshift(`${KOREAN_NUMBER_COUNTING_PLACE[num]}${KOREAN_NUMBER_SUB_THOUSANDS_PLACE[j]}`);
     }
   }
-  return str.join('');
+  return result.join('');
 }
